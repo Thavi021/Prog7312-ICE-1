@@ -1,0 +1,48 @@
+using System;
+
+namespace ICE1_ST10120981_Prog7312
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int size;
+            //ICE1_ST10120981_Prog7312
+            int oddSum = 0, evenSum = 0;
+            //ICE1_ST10120981_Prog7312
+            
+            Console.WriteLine("Enter the size of the array:");
+            //ICE1_ST10120981_Prog7312
+            size = Convert.ToInt32(Console.ReadLine());
+            //ICE1_ST10120981_Prog7312
+
+            int[] arr = new int[size];
+            //ICE1_ST10120981_Prog7312
+
+            Console.WriteLine("Enter the array values:");
+            //ICE1_ST10120981_Prog7312
+            for (int i = 0; i < size; i++)
+            {
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+                //ICE1_ST10120981_Prog7312
+            }
+
+            for (int i = 0; i < size; i++)
+            {
+                if (arr[i] % 2 == 0)
+                {
+                    evenSum += arr[i];
+                    //ICE1_ST10120981_Prog7312
+                }
+                else
+                {
+                    oddSum += arr[i];
+                    //ICE1_ST10120981_Prog7312
+                }
+            }
+
+            Console.WriteLine("Even Sum: " + evenSum + " Odd Sum: " + oddSum);
+            //ICE1_ST10120981_Prog7312
+        }
+    }
+}
